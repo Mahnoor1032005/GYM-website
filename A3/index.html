@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ROSHAN GYM</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="picsA3/icon.png">
+</head>
+<body>
+    <header>
+        <div class="mobile-header">
+            <div class="logo">
+                <img src="picsA3/LOGO.png" alt="Gym Logo">
+            </div>
+            <button class="mobile-menu-toggle" aria-label="Toggle menu">☰</button>
+        </div>
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Transform Your Body</h1>
+            <p>Join our gym and start your fitness journey today</p>
+            <a href="#contact" class="btn">Join Now</a>
+        </div>
+    </section>
+
+    <section id="services" class="services">
+        <h2>Our Services</h2>
+        <div class="service-grid">
+            <div class="service-card">
+                <img src="picsA3/pexels-willpicturethis-1954524.jpg" alt="Personal Training">
+                <h3>Personal Training</h3>
+                <p>Customized workout plans with certified trainers</p>
+            </div>
+            <div class="service-card">
+                <img src="picsA3/pexels-pavel-danilyuk-6295973.jpg" alt="Group Classes">
+                <h3>Group Classes</h3>
+                <p>Fun and energetic group workout sessions</p>
+            </div>
+            <div class="service-card">
+                <img src="picsA3/pexels-cottonbro-7689289.jpg" alt="Nutrition Plans">
+                <h3>Nutrition Plans</h3>
+                <p>Customized diet plans for your fitness goals</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <h2>About Us</h2>
+        <div class="about-content">
+            <img src="picsA3/pexels-airamdphoto-13106582.jpg" alt="Our Gym">
+            <div class="about-text">
+                <p>We are a premier fitness center dedicated to helping you achieve your health and wellness goals. Our state-of-the-art facilities and expert trainers provide the perfect environment for your transformation.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <h2>What Our Members Say</h2>
+        <div class="testimonial-slider">
+            <div class="testimonial active">
+                <p>"This gym changed my life! The trainers are amazing."</p>
+                <span>- John D.</span>
+            </div>
+            <div class="testimonial">
+                <p>"Best equipment and friendly atmosphere. Highly recommend!"</p>
+                <span>- Sarah M.</span>
+            </div>
+            <div class="testimonial">
+                <p>"I've never felt better since joining this gym."</p>
+                <span>- Mike T.</span>
+            </div>
+            <div class="slider-controls">
+                <button class="prev">❮</button>
+                <button class="next">❯</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <form id="contactForm">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Your Email" required>
+            <textarea id="message" placeholder="Your Message" required></textarea>
+            <button type="submit" class="btn">Send Message</button>
+            <p id="formMessage" class="form-message"></p>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Gym Fitness. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

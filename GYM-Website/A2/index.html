@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ROSHAN GYM</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" href="picsA2/icon.png">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#4f7d4f',
+                        dark: '#1e271e',
+                        light: '#1e271e'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-white text-gray-800">
+    <!-- Header -->
+    <header class="bg-dark text-white fixed w-full z-50">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="logo">
+                <img src="picsA2/LOGO.png" alt="Gym Logo" class="h-12">
+            </div>
+            <nav>
+                <ul class="flex space-x-8">
+                    <li><a href="#home" class="font-bold hover:text-primary transition">Home</a></li>
+                    <li><a href="#services" class="font-bold hover:text-primary transition">Services</a></li>
+                    <li><a href="#about" class="font-bold hover:text-primary transition">About</a></li>
+                    <li><a href="#contact" class="font-bold hover:text-primary transition">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="h-screen bg-cover bg-center flex items-center justify-center text-white pt-20"
+        style="background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('picsA2/background.jpg')">
+        <div class="text-center px-4">
+            <h1 class="text-5xl font-bold mb-6">Transform Your Body</h1>
+            <p class="text-xl mb-8">Join our gym and start your fitness journey today</p>
+            <a href="#contact" class="bg-primary text-white px-8 py-3 rounded font-bold hover:bg-green-900 transition">Join Now</a>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 px-6">
+        <div class="container mx-auto">
+            <h2 class="text-4xl font-bold text-center mb-16">Our Services</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Service Card 1 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden transition-transform hover:-translate-y-2">
+                    <img src="picsA2/pexels-willpicturethis-1954524.jpg" alt="Personal Training" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Personal Training</h3>
+                        <p class="text-gray-600">Customized workout plans with certified trainers</p>
+                    </div>
+                </div>
+                
+                <!-- Service Card 2 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden transition-transform hover:-translate-y-2">
+                    <img src="picsA2/pexels-pavel-danilyuk-6295973.jpg" alt="Group Classes" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Group Classes</h3>
+                        <p class="text-gray-600">Fun and energetic group workout sessions</p>
+                    </div>
+                </div>
+                
+                <!-- Service Card 3 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden transition-transform hover:-translate-y-2">
+                    <img src="picsA2/pexels-cottonbro-7689289.jpg" alt="Nutrition Plans" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Nutrition Plans</h3>
+                        <p class="text-gray-600">Customized diet plans for your fitness goals</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 px-6 bg-light">
+        <div class="container mx-auto">
+            <h2 class="text-4xl font-bold text-center mb-16 text-white">About Us</h2>
+            <div class="flex flex-col md:flex-row items-stretch gap-12 h-full">
+                <img src="picsA2/pexels-airamdphoto-13106582.jpg" alt="Our Gym" 
+                    class="w-full md:w-1/2 rounded-lg" style="box-shadow: 0 5px 15px #4f7d4f">
+                <div class="w-full md:w-1/2 flex flex-col justify-bottom">
+                    <p class="text-white">
+                        We are a premier fitness center dedicated to helping you achieve your health and wellness goals. 
+                        Our state-of-the-art facilities and expert trainers provide the perfect environment for your transformation.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 px-6">
+        <div class="container mx-auto max-w-2xl">
+            <h2 class="text-4xl font-bold text-center mb-16">Contact Us</h2>
+            <form class="space-y-4">
+                <input type="text" placeholder="Your Name" 
+                    class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-primary">
+                <input type="email" placeholder="Your Email" 
+                    class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-primary">
+                <textarea placeholder="Your Message" 
+                    class="w-full px-4 py-2 border border-gray-300 rounded h-40 focus:outline-none focus:ring-2 focus:ring-primary"></textarea>
+                <button type="submit" 
+                    class="bg-primary text-white px-8 py-3 rounded font-bold hover:bg-red-500 transition w-full md:w-auto">
+                    Send Message
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-8 text-center">
+        <div class="container mx-auto">
+            <p>&copy; 2023 Gym Fitness. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
